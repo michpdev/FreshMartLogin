@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FreshMart</title>
+	<!-- Okta Sign-In Widget: Core js and css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://global.oktacdn.com/okta-signin-widget/5.4.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+	<link href="https://global.oktacdn.com/okta-signin-widget/5.4.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.com/e75e53af-e9d3-47a2-a7c5-63e6fac60a26%2Ffavicon-32x32.png?v=1600548309703" />
+  <!-- -->
+  <script src="/script.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/style.css">
+ 
+</head>
+<body>
+  <div style="text-align: center;"><img style="width: 100px" src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/freshmar.png?v=1649381983569" /></div>
+  <div class="title">Welcome to FreshMart!</div>
+  <div class="sub-title">The Unique E-Commerce Platform</div>
+  <hr>
+  <div class="sub-header" id="signin-header">Where's the login...</div>
+
+  <div id="okta-login-container"></div>
+  
+  <div id="okta-post-login-container" style="display: none">
+    <div id="challenge2Section" style="width: 0%; float:left; display: none;">
+      <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Recommended Buys</h1>      
+    <p>Here's what is recommended for you today</p>
+  </div>
+    </div>
+      <div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+   <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"> <img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/92b6ca0f-ac06-4e5f-8d1c-da1071d37aa4.3033f7929db78ff16c5b9f20d327961c.jpg?v=1649438218183" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchase</div>
+      </div>
+      </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Special Today</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0002100065883_3_A1L1_0600.png?v=1649438322226" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+      </div>
+    
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Friday Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/1.jpg?v=1649438226568" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One Free</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/81-DyMXy6tL._SX679_PIbundle-64%2CTopRight%2C0%2C0_AA679SH20_.jpg?v=1649438250810" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One 1/2 Off</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/82a557ea-cce7-4720-80d0-bedba546256d.5c9091434c3859905d85de4769d23cff.jpg?v=1649438215666" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/GUEST_8573000a-d213-4142-9dfa-3e7872199707.jpg?v=1649437870481" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchas</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+    
+    </div>
+     <div id="challenge3Section" style="width: 0%; float:left; display: none;">
+      <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Recommended Buys</h1>      
+    <p>Here's what is recommended for you today</p>
+  </div>
+    </div>
+      <div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+   <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"> <img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/41iCKxEDPHL.jpg?v=1649437855900" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchase</div>
+      </div>
+      </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Special Today</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/13113.jpg?v=1649437861238" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+      </div>
+    
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Friday Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/chili-pepper.jpg?v=1649437866365" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One Free</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/primo-vantage-400x350.jpg?v=1649437879841" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One 1/2 Off</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/download.jpg?v=1649437956123" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/1603138472-c21bcef2-ca1b-44ab-b9e6-6ee0e615e3af.17d5e08f92b333ca1345cce39744a506.jpg?v=1649438210464" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchas</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+    
+    </div>
+  <div id="challenge4Section" style="width: 0%; float:left; display: none;">
+      <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Recommended Buys</h1>      
+    <p>Here's what is recommended for you today</p>
+  </div>
+    </div>
+      <div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+   <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"> <img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0164466_gold-nut-cashews-natural-7-oz_300.jpeg?v=1649439565900" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchase</div>
+      </div>
+      </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Special Today</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0206970_osem-consommechickensoup-mix-176-oz_300.jpeg?v=1649439585864" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+      </div>
+    
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Friday Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0203461_paskesz-rice-cake-minis-plain-box-42-oz_300.jpeg?v=1649439608174" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One Free</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0176892_streits-matzohs-lightly-salted_300.jpeg?v=1649439834007" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy One Get One 1/2 Off</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0198241_givat-cottage-cheese-5-16-oz_300.jpeg?v=1649439844680" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$1 Off Your Purchase</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Deal</div>
+        <div class="panel-body"><img src="https://cdn.glitch.global/93be8bb3-e941-4e11-a9fe-1790d7218d76/0199959_haolam-mozzarella-cheddar-shredded-cheese-8-oz_300.jpeg?v=1649442387097" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">$2 Off Your Purchas</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+    
+    </div>
+    
+    <div id="challenge1Section" style="width: 100%; float:right;">
+      <!-- Tab links -->
+      <div class="tab">
+        <button id="showIdTokenTabBtn" class="tablinks" onclick="openTokenTab(event, 'idTokenTab')">Id Token</button>
+        <button id="showAccessTokenTabBtn" class="tablinks" onclick="openTokenTab(event, 'accessTokenTab')">Access Token</button>
+        <button id="signOutBtn" class="tablinks" onclick="signOut(signIn)">Sign Out</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="idTokenTab" class="tabcontent">
+        <p><textarea id="idTokenDisplay"></textarea></p>
+      </div>
+
+      <div id="accessTokenTab" class="tabcontent">
+        <p><textarea id="accessTokenDisplay"></textarea></p>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+
+
+  
+  <script type="text/javascript">
+    
+    //Step 1: Set up the widget
+    var signIn = new OktaSignIn({
+      baseUrl: 'https://www-jazzed-giraffe-somber.oktapreview.com',
+      clientId: '0oa16sqwv09OgqwZX0h8',
+      redirectUri: 'https://freshmart.glitch.me',
+      authParams: {
+        issuer: 'https://www-jazzed-giraffe-somber.oktapreview.com/oauth2/aus16srce2hsOao9Y0h8'
+      },
+      el: '#okta-login-container'
+    });
+
+    //Step 2: Display the widget
+    signIn.showSignInToGetTokens({
+      scopes: ['openid', 'email', 'profile', 'funAccess']
+    }).then(function(tokens) {
+      // Store tokens
+      signIn.authClient.tokenManager.add('idToken', tokens.idToken);
+      signIn.authClient.tokenManager.add('accessToken', tokens.accessToken);
+
+      checkAndShowIdToken(signIn);
+    }).catch(function(error) {
+      // This function is invoked with errors the widget cannot recover from:
+      // Known errors: CONFIG_ERROR, UNSUPPORTED_BROWSER_ERROR
+      checkAndShowIdToken(signIn);
+    });
+        
+    signIn.on('ready', function(){
+      document.getElementById("signin-header").style.display = "none";
+    });
+    
+    //Challenge 2: Uncomment this to display Challenge 2 dashboard
+  
+    //Michelle Demo
+     //showChallenge2();
+    //Sarah Newman Demo
+    //showChallenge3();
+    //Ethan Goldman Demo
+    showChallenge4();
+    
+    //Challenge 2: Set Glitch API URL here
+    var baseAPIUrl = "https://fun-auth-api.glitch.me";
+    
+	</script>
+
+</body>
+</html>
